@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi niño hermoso</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Doto:wght@100..900&display=swap" rel="stylesheet">
+
+</head> 
+
+<style>
+    body {
+        margin: 0;   
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ffa0b0ea;
+    }
+
+    .hearth {
+        height: 250px;
+        width: 250px;
+        background-color: rgb(247, 4, 56);
+        position: relative;
+        transform: rotate(45deg);
+        box-shadow: 30px 30px 150px #f20438;
+        animation: palpitar 0.60s linear infinite alternate;
+    }
+    .contenido {
+        position: fixed;
+        margin-bottom: 65px;
+        text-align: center;
+    }
+
+    h1 {
+        color: #f3ef18;}
+    h4 {
+        color: rgb(255, 255, 255)}
+    h3 {
+        color: rgb(0, 253, 148)
+    }
+        
+
+
+@keyframes palpitar {
+    0%{transform: rotate(45deg) scale(1.10);}
+    80%{transform: rotate(45deg) scale(1.0);}
+    100%{transform: rotate(45eg) scale(0.8);}
+}
+
+    .hearth::before {
+        content: "";
+        position: absolute;
+        height: 250px;
+        width: 250px;
+        background-color: rgb(247, 4, 56);
+        right: 50%;
+        border-radius: 50%;
+        box-shadow: 30px 30px 150px #f20438;
+
+    }
+
+    .hearth::after {
+        content: "";
+        position:absolute;
+        height: 250px;
+        width: 250px;
+        background-color: rgb(247, 4, 56);
+        top: -50%;
+        border-radius: 50%;
+        box-shadow: 30px 30px 150px #f20438;
+        
+    }
+</style>
+<body>
+    <div class="hearth"></div>
+    <div class="contenido"><h1> ¡FELIZ SAN VALENTÍN! </h1><h4>Gracias por llegar a mi vida <h4> y hacerme muy feliz cada día, </h4><h4>soy muy afortunada de tenerte.</h4><h3>Tkm Abraham :D <h3></h4>💐</h4></h5></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script>
+    setInterval(() => {
+        confetti({
+    particleCount: 200,
+    spread: 360,
+    origin: { x:0.5, y:0.5}
+ });
+},1500);
+</script>
+    
+    <style>
+        .contenido {
+            font-family: "Doto", serif;
+            font-size: small;
+        }
+            
+    
+    </style>
+        
+    
+</body>
+</html>
